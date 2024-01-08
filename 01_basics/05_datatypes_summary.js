@@ -46,3 +46,27 @@ console.log("Namaste World!");
 
 console.log(typeof bigNumber);
 console.log(typeof func);
+
+
+// **************************
+// Stack(Primitive) and Heap Memory(Non-Primitive)
+//  Copy Milegi           Reference Milega 
+
+let ytName = "Prasad Vlogs";
+let anotherName = ytName;
+anotherName = "Code with Prasad";
+
+console.log(ytName);
+console.log(anotherName);
+
+let user = {
+    email: "User@google.com",
+    upi:"user@ybl"
+}
+
+let user2 = user;
+user2.email="raj@bing.com"
+user2.upi="raj@gpay"
+
+console.log(user);
+console.log(user2);
