@@ -25,3 +25,16 @@ console.log(hundreads.toLocaleString('en-IN'));
 // console.log(Math.max(4,3,5,6)); //6
 
 console.log(Math.random()); //always between 0 and 1
+console.log(Math.random()*10);
+console.log(Math.random()*100);
+console.log(Math.random()*1000);
+
+console.log((Math.random()*10) +1); //for avoiding 0.0 case
+console.log(Math.floor(Math.random()*10) +1); // for having lower value 
+
+const min = 10;
+const max = 20;
+console.log(Math.floor(Math.random()* (max-min +1))+min);
+
+
+
