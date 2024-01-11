@@ -34,7 +34,7 @@ function add2(n5,n6){
 const result1 = add2(3,5);
 console.log("Result1: ",result1); //function returning value
 
-function loginUserMsg(username){
+function loginUserMsg(username = "sam"){
     // if(username === undefined){
     //     console.log("Please enter username...");
     //     return
