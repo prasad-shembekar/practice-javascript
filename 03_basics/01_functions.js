@@ -50,6 +50,18 @@ console.log(loginUserMsg("Prasad"));
 console.log(loginUserMsg("")); // just logged in...
 console.log(loginUserMsg()); //undefined just logged in...
 
+// making multiple parameters
+
+function calculateCartPrice(...num1){ //rest (khula bik raha hai isko bundle me pack karo aur muze dedo)
+    return num1;
+}
+console.log(calculateCartPrice(200,400,500));
+
+
+
+
+
+
 
 
 
