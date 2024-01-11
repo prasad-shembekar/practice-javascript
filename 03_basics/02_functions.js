@@ -1,6 +1,6 @@
-var c = 300;
+var c = 300; //global scope
 
-if(true){
+if(true){ //block scoped 
     let a = 10;
     const b = 20;
     var c = 30;
