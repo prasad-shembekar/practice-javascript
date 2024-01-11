@@ -35,9 +35,13 @@ const result1 = add2(3,5);
 console.log("Result1: ",result1); //function returning value
 
 function loginUserMsg(username){
-    if(username === undefined){
+    // if(username === undefined){
+    //     console.log("Please enter username...");
+    //     return
+    // }
+    if(!username){
         console.log("Please enter username...");
-        return
+        return 
     }
     return `${username} just logged in...`;
 }
