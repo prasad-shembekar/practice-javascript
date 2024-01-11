@@ -9,3 +9,4 @@ if(true){ //block scoped
 // console.log(a);  //not allowed outside block
 // console.log(b); //not allowed outside block 
 console.log(c); //it is allowed 
+
