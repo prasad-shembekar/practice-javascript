@@ -52,12 +52,34 @@ console.log(loginUserMsg()); //undefined just logged in...
 
 // making multiple parameters
 
-function calculateCartPrice(...num1){ //rest (khula bik raha hai isko bundle me pack karo aur muze dedo)
+function calculateCartPrice(val1,val2,...num1){ //rest (khula bik raha hai isko bundle me pack karo aur muze dedo)
     return num1;
 }
 console.log(calculateCartPrice(200,400,500));
 
+const user = {
+    username: "Prasad",
+    price: 199,
+}
 
+function handleObject(anyObj){
+    console.log(`Username is ${anyObj.username} and price is ${anyObj.price}`);
+}
+// handleObject(user);
+
+handleObject({
+    username: "Sam",
+    price: 399
+});
+
+const myArr = [200,300,400];
+
+function returnSecond(getArray){
+    return getArray[1];
+}
+// console.log(returnSecond(myArr));
+
+console.log(returnSecond([1,2,4,4,5,6]));
 
 
 
