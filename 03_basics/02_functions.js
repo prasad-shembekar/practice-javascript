@@ -8,8 +8,14 @@ if(true){ //block scoped
     const b = 20;
     var c = 30;
 }
-
-// console.log(a);  //not allowed outside block
+console.log(a); //it will be 10
+// console.log(a);  //not allowed outside block if global not given
 // console.log(b); //not allowed outside block 
 console.log(c); //it is allowed 
+
+const array = [1,2,3,4];
+for(let i=0; i< array.length;i++){
+    const element = array[i];
+}
+// console.log(i); //inaccessible
 
