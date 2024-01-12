@@ -38,14 +38,14 @@ chai2();
 // () => {} it is simple arrow function 
 
 const addTwo = (num1,num2) => {
-    console.log(num1+num2);
-    console.log("Hello there!");
+    return num1+num2; //when you will wirte inside curly braces we must use return statement 
 }
-addTwo(5,6);
+console.log(addTwo(5,6));
 
 // Implicit return arrow function 
 
-const addThree = (num1,num2) => num1+num2;
+const addThree = (num1,num2) => (num1+num2); //when we use paranthesis there is no need to use return statement.
 console.log(addThree(3,4));
+
 
 
