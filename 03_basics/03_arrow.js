@@ -48,5 +48,11 @@ console.log(addTwo(5,6));
 const addThree = (num1,num2) => (num1+num2); //when we use paranthesis there is no need to use return statement.
 console.log(addThree(3,4));
 
+// you can not return object like below it will give you undefined
+
+const addFour = (num1,num2) => {username:"Prasad"};
+console.log(addFour(4,5)); //it will show undefined.
+
+
 
 
