@@ -44,6 +44,7 @@ console.log(addTwo(5,6));
 
 // Implicit return arrow function 
 
+// const addThree = (num1,num2) => num1+num2;  implicit return statement 
 const addThree = (num1,num2) => (num1+num2); //when we use paranthesis there is no need to use return statement.
 console.log(addThree(3,4));
 
