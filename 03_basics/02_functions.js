@@ -20,3 +20,29 @@ for(let i=0; i< array.length;i++){
 // console.log(i); //inaccessible
 
 console.log("Multiple Scope");
+
+// Nested scope
+
+function one(){
+    const username = "Prasad";
+
+    function two(){
+        const website="Youtube";
+        console.log(username);
+    }
+    // console.log(website);
+    two();
+}
+one();
+
+if(true){
+    const username = "Prasad";
+    if(username === "Prasad"){
+        const website = " Youtube";
+        console.log(username + website);
+    }
+    // console.log(website);
+}
+// console.log(username);
+
+
