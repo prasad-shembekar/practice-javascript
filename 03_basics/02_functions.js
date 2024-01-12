@@ -47,15 +47,18 @@ if(true){
 
 // *************INTERESTING*******************************
 
+addone(5);
 function addone(num){
     return num+1;
 }
-addone(5); //return hua hai lekin print nahi hua hai 
+ //return hua hai lekin print nahi hua hai 
 console.log("Hiii");
 
+
+addTwo(5); //not possible 
 const addTwo  = function(num){  //function expression 
     return num + 2;
 }
-addTwo(5);
+
 console.log("Hiii");
 
