@@ -35,5 +35,9 @@ const chai2 = ()=>{
 }
 chai2();
 
+// () => {} it is simple arrow function 
 
+const addTwo = () => {
+    console.log("Hello there!");
+}
 
