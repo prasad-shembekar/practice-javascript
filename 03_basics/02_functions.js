@@ -60,5 +60,5 @@ const addTwo  = function(num){  //function expression
     return num + 2;
 }
 
-console.log("Hiii");
+consoe.log("Hiii");
 
