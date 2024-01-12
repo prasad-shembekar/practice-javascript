@@ -43,4 +43,9 @@ const addTwo = (num1,num2) => {
 }
 addTwo(5,6);
 
+// Implicit return arrow function 
+
+const addThree = (num1,num2) => num1+num2;
+console.log(addThree(3,4));
+
 
