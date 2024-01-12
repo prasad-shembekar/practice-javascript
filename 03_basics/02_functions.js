@@ -45,4 +45,17 @@ if(true){
 }
 // console.log(username);
 
+// *************INTERESTING*******************************
+
+function addone(num){
+    return num+1;
+}
+addone(5); //return hua hai lekin print nahi hua hai 
+console.log("Hiii");
+
+const addTwo  = function(num){  //function expression 
+    return num + 2;
+}
+addTwo(5);
+console.log("Hiii");
 
