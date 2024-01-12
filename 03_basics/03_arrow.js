@@ -37,7 +37,10 @@ chai2();
 
 // () => {} it is simple arrow function 
 
-const addTwo = () => {
+const addTwo = (num1,num2) => {
+    console.log(num1+num2);
     console.log("Hello there!");
 }
+addTwo(5,6);
+
 
