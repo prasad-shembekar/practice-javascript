@@ -53,6 +53,11 @@ console.log(addThree(3,4));
 const addFour = (num1,num2) => {username:"Prasad"};
 console.log(addFour(4,5)); //it will show undefined.
 
+// so you should wrap inside paranthesis 
+const addFive = (num1,num2) => ({username:"Prasad"});
+console.log(addFive(4,5)); //it will show undefined.
+
+
 
 
 
