@@ -57,6 +57,10 @@ console.log(addFour(4,5)); //it will show undefined.
 const addFive = (num1,num2) => ({username:"Prasad"});
 console.log(addFive(4,5)); //it will show undefined.
 
+const myArray = [2,5,6,6,8,8];
+myArray.forEach((x)=>console.log(x));
+
+
 
 
 
