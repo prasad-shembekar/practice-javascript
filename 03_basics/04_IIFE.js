@@ -1,11 +1,12 @@
 (function chai(){
+    // it is named IIFE
     console.log(`DB connected...`); 
 })();
 
 // ()(); first is function defination and second is execution
 
-(()=>{
-    console.log("DB");
-})();
+((name)=>{
+    console.log(`DB connected ${name}`);
+})('Prasad');
 
 
