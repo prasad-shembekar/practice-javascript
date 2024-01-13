@@ -46,7 +46,12 @@ else{
 const score = 200;
 if(score>100){
     var power = "fly"; //with var it is accessible outside out of scope but using const and let it is not 
+    // const power = "fly";
     console.log(`User power: ${power}`);
 }
 console.log(`User power: ${power}`); //problem of scope occured 
 
+// shorthand annotation 
+
+const balance = 1000;
+if(balance>500) console.log(balance);
