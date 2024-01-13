@@ -55,7 +55,28 @@ console.log(`User power: ${power}`); //problem of scope occured
 
 // implicit scope 
 const balance = 1000;
-if(balance>500) console.log(balance),
-console.log("test it...")
+if(balance>500) console.log(balance),console.log("test it..."); //do not perform like it 
+
+if(balance < 500){
+    console.log("it is less than");
+}else if(balance <750){
+    console.log('less than 750');
+}else{
+    console.log('less than 1200');
+}
+
+const userLoggedIn = true;
+const debitCard = true;
+const loggedInFromGoogle = false;
+const loggedInFromEmail = true;
+
+if(userLoggedIn && debitCard){ //and means dono statement true hone chahiye 
+    console.log("Allowed to buy course");
+}
+
+if(loggedInFromGoogle || loggedInFromEmail){ //from three something
+    console.log('logged in from some medium');
+}
+
 
 
