@@ -55,5 +55,7 @@ console.log(`User power: ${power}`); //problem of scope occured
 
 // implicit scope 
 const balance = 1000;
-if(balance>500) console.log(balance);
+if(balance>500) console.log(balance),
+console.log("test it...")
+
 
