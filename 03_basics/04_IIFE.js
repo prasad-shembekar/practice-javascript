@@ -10,3 +10,8 @@
 })('Prasad');
 
 
+function hii(){
+    console.log(this);
+}
+hii();
+
