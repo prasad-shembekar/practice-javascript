@@ -29,3 +29,5 @@ switch (month) {
         console.log('Default');
         break;
 }
+// except default case all the cases next to it will be excecuted if break statement is not given 
+
