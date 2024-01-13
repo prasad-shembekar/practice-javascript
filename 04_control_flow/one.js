@@ -45,7 +45,7 @@ else{
 
 const score = 200;
 if(score>100){
-    const power = "fly";
+    var power = "fly"; //with var it is accessible outside out of scope but using const and let it is not 
     console.log(`User power: ${power}`);
 }
 console.log(`User power: ${power}`); //problem of scope occured 
