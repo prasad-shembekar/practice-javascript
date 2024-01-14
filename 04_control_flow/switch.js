@@ -2,6 +2,7 @@
     // break;
 
 const month = 'march';
+// const month = 3;
 
 switch (month) {
     case 'march':
