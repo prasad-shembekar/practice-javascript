@@ -40,4 +40,5 @@ let val1;
 // val1 = undefined ?? 15;
 // console.log(val1);
 
-val
+val1  = null ?? 10 ?? 20;
+console.log(val1);
