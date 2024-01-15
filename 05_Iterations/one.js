@@ -24,3 +24,10 @@ for (let index = 0; index < myArr.length; index++) {
     console.log(element);
 }
 
+// break and continue
+
+for (let index = 1; index <= 20; index++) {
+    console.log(`Value of i is ${index}`);
+}
+
+
