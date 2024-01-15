@@ -11,9 +11,11 @@ for (let i = 0; i <= 10; i++) {
 // first index gets initialised then we compare its value if true then code gets executed then index increament done again value checked then code executes
 
 for (let i = 0; i <= 10; i++) {
-    console.log("It is val of I: ",i);
+    console.log(`It is table of ${i}:`);
     for (let j = 0; j <= 10; j++) {
-        console.log("J =", j);
+        console.log(i + '*' + j + '=' +i*j);
     }
 }
+
+
 
