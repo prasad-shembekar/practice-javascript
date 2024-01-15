@@ -13,7 +13,6 @@ while(arr<myArr.length){
 }
 
 let score = 1;
-
 do{
     console.log(score);
     score += 1;
