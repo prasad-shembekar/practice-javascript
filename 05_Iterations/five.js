@@ -4,8 +4,8 @@ coding.forEach(function(item){
     console.log(item);
 })
 
-coding.forEach((x)=>{
-    console.log(x);
+coding.forEach((item)=>{
+    console.log(item);
 })
 
 
