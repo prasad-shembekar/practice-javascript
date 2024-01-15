@@ -15,3 +15,4 @@ for (const key in lang) {
     console.log(key);
     console.log(lang[key]);
 }
+
