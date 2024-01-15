@@ -18,7 +18,7 @@ for (let i = 1; i <= 10; i++) {
 }
 
 let myArr = ["flash",'superman','batman'];
-
+console.log(myArr.length);
 for (let index = 0; index < myArr.length; index++) {
     const element = myArr[index];
     console.log(element);
