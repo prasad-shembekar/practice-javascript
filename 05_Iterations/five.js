@@ -16,5 +16,7 @@ console.log("Provide item function")
 coding.forEach(printMe); //only provide function reference
 
 
-
+coding.forEach((item,index,arr)=>{
+    console.log(item,index,arr);
+})
 
