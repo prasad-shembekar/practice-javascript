@@ -12,6 +12,9 @@ function printMe(item){
     console.log(item);
 }
 
+console.log("Provide item function")
+coding.forEach(printMe); //only provide function reference
+
 
 
 
