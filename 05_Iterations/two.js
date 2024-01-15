@@ -12,6 +12,13 @@ while(arr<myArr.length){
     arr = arr + 1;
 }
 
+let score = 1;
+
+do{
+    console.log(score);
+    score += 1;
+}while(score<10);
+
 
 
 
