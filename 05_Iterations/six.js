@@ -9,6 +9,10 @@ const values = coding.forEach((item)=>{
 
 
 const myNum = [1,2,3,4,5,6,7,8,9,10];
-const val = myNum.filter((num)=> num>4)
+// const val = myNum.filter((num)=> num>4)
+
+const val = myNum.filter((num)=> {
+    return num>4;
+})
 
 console.log(val);
