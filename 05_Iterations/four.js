@@ -16,3 +16,13 @@ for (const key in lang) {
     console.log(lang[key]);
 }
 
+const map = new Map();
+map.set('IN',"India");
+map.set('USA');
+map.set('EU',"Europe");
+map.set('IN',"India");
+// console.log(map);
+
+for (const key in map) {
+    console.log(key);
+}
