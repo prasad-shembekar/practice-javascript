@@ -13,7 +13,11 @@
 <body>
     <div class="bg-black">
         <h1 id="title" class="heading">DOM Learning <span style="display: none;">test test</span></h1>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
+        <h2>Lorem ipsum dolor sit amet.</h2>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, accusamus!</p>
+        
     </div>
 </body>
 </html>
@@ -61,5 +65,18 @@ when you say innerText -> it will show you inner text only
 when we say textContent -> if any html tag has another tag inside it. it shows inside tag content also like 
 we have inside span tag test test
 
+document.getElementsByClassName('heading')
+HTMLCollection { 0: h1#title.heading
+, length: 1, … }
+
+document.getElementsByClassName('heading').id
+undefined
+document.getElementsByClassName('heading').className
+undefined
+document.querySelector('h1');
+<h1 id="title" class="heading">
+
+document.querySelectorAll('h1');
+NodeList [ h1#title.heading ]
 
  -->
