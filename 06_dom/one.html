@@ -3,11 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <title>DOM Learning</title>
+    <style>
+        .bg-black{
+            background-color: #212121;
+            color: #fff;
+        }
+    </style>
 </head>
 <body>
     <div class="bg-black">
-        <h1 class="heading">DOM Learning</h1>
+        <h1 id="title" class="heading">DOM Learning <span style="display: none;">test test</span></h1>
         <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid, accusamus!</p>
     </div>
 </body>
 </html>
+
+<!-- 
+document.getElementById('title').getAttribute('id')
+"title"
+document.getElementById('title').getAttribute('class');
+"heading"
+document.getElementById('title').setAttribute('class','test');
+undefined
+document.getElementById('title').setAttribute('class','test','heading');
+undefined
+document.getElementById('title')
+<h1 id="title" class="test">
+
+const title = document.getElementById('title')
+undefined
+title.style.backgroundColor = 'green'
+"green"
+title.style.padding = '15px'
+"15px"
+title.style.borderRadius = "5px";
+"5px"
+title.style.borderRadius = "15px";
+"15px"
+title
+<h1 id="title" class="test" style="background-color: green;…x; border-radius: 15px;">
+
+title.textContent
+"DOM Learning"
+
+title.innerHTML
+"DOM Learning"
+title.innerText
+"DOM Learning"
+
+​title.innerText
+"DOM Learning"
+title.textContent
+"DOM Learning test test" 
+
+when you say innerText -> it will show you inner text only 
+
+when we say textContent -> if any html tag has another tag inside it. it shows inside tag content also like 
+we have inside span tag test test
+
+
+ -->
