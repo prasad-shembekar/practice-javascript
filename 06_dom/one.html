@@ -143,6 +143,29 @@ templist[2].style.border = "1px solid white"
 
 we have different ways to convert NodeList into Array
 
+Main difference between NodeList and HTMLCollection 
+NodeList provides you forEach method HTMLCollection does not
+
+tempClassList
+HTMLCollection { 0: li.list-item, 1: li.list-item, 2: li.list-item, 3: li.list-item
+, length: 4 }
+
+Array.from(tempClassList);
+Array(4) [ li.list-item, li.list-item, li.list-item, li.list-item
+ ]
+
+we can convert HTMLCollection into Array using Array.from() method 
+const myConvertedArr = Array.from(tempClassList);
+undefined
+myConvertedArr
+Array(4) [ li.list-item, li.list-item, li.list-item, li.list-item
+ ]
+
+myConvertedArr.forEach((li)=>{
+    li.style.color = "Orange";
+}) 
+
+
 
 
  -->
