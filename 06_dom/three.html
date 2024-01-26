@@ -11,6 +11,18 @@
 <script>
    const div =  document.createElement('div');
    console.log(div);
-   
+
+//    div.setAttribute("class","main")
+    div.className = "main1";
+    div.id = Math.round(Math.random()*10+1);
+
+    div.setAttribute("title","generated title"); // sidhe manipulate krega
+    div.style.backgroundColor = "Green";
+    div.style.padding = "12px";
+    // div.innerText = "Chai aur code"; //ye reference leke overrride krega 2 round
+    const addText = document.createTextNode('Chai aur code');
+    div.appendChild(addText);
+
+    document.body.appendChild(div);
 </script>
 </html>
