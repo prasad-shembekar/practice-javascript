@@ -13,12 +13,27 @@
 <script>
     function addLanguage(langName){
         const li = document.createElement('li');
-        li.innerHTML = `${langName}`;
+        li.innerHTML = `${langName}`; //here whole tree traversing is done 
         document.querySelector('.language').
         appendChild(li)
     }
     addLanguage('Python');
-    addLanguage("Typescript");
-    
+    addLanguage("Typescript"); 
+     
+     function addOptLanguage(langName){
+        const li = document.createElement('li');
+        // li.innerHTML = `${langName}`; //here whole tree traversing is done so it is not optimized
+        li.appendChild(document.createTextNode(langName));
+        document.querySelector('.language').appendChild(li);
+     }
+     addOptLanguage("goLang");
+
+    //  Edit
+    const secondLang = document.querySelector("li:nth-child(2)")
+    console.log(secondLang);
+    const newLi = document.createElement('li');
+    newLi.textContent = "Mojo";
+    secondLang.replaceWith(newLi);
+    console.log(secondLang);
 </script>
 </html>
