@@ -37,11 +37,15 @@
     console.log(secondLang);
 
     // Edit
-
     const firstLang = document.querySelector('li:first-child');
     console.log(firstLang);
     const newLi1 = document.createElement("li");
     newLi1.textContent = "C Lang";
     firstLang.replaceWith(newLi1);
+
+    //remove
+    const lastLang = document.querySelector("li:last-child");
+    lastLang.remove()
+    console.log(lastLang)
 </script>
 </html>
