@@ -45,13 +45,25 @@
     // Event propogation 
     // Event Bubbling (deafault / false), Event Capturing (true)
 
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("Clicked inside ul");
+    // },false)
+
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("owl clicked");
+    // },false)
+
+    // inside se out inner element se bahar ki taraf -> bubbling 
+
+    // Capturing mode as below 
+
     document.getElementById('images').addEventListener('click',function(e){
         console.log("Clicked inside ul");
-    },false)
+    },true)
 
     document.getElementById('owl').addEventListener('click',function(e){
         console.log("owl clicked");
-    },false)
+    },true) //bahar se andar ki taraf 
 
 
     // document.getElementById('images').addEventListener('click', function(e){
