@@ -57,20 +57,20 @@
 
     // Capturing mode as below 
 
-    document.getElementById('images').addEventListener('click',function(e){
-        console.log("Clicked inside ul");
-    },true)
+    // document.getElementById('images').addEventListener('click',function(e){
+    //     console.log("Clicked inside ul");
+    // },true)
 
-    document.getElementById('owl').addEventListener('click',function(e){
-        console.log("owl clicked");
-        e.stopPropagation(); //event bubbling will be stopped 
-    },true) //bahar se andar ki taraf 
+    // document.getElementById('owl').addEventListener('click',function(e){
+    //     console.log("owl clicked");
+    //     e.stopPropagation(); //event bubbling will be stopped 
+    // },true) //bahar se andar ki taraf 
 
-    document.getElementById('google').addEventListener('click',function(e){
-        e.preventDefault(); //it will stop submitting page 
-        e.stopPropagation();
-        console.log('google clicked')
-    },false)
+    // document.getElementById('google').addEventListener('click',function(e){
+    //     e.preventDefault(); //it will stop submitting page 
+    //     e.stopPropagation();
+    //     console.log('google clicked')
+    // },false)
    
     
     // document.querySelector('#images').addEventListener('click', function(e){
@@ -81,6 +81,14 @@
     //         removeIt.remove()
     //     }
     
+    document.querySelector('#images').addEventListener('click',function(e){
+        console.log(e.target.parentNode);
+        if(e.target.tagName === 'IMG'){
+            let removeIt = e.target.parentNode
+        removeIt.remove();
+        }
+        // removeIt.parentNode.removeChild(removeIt);
+    })
         
     // })
     
