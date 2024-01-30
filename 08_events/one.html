@@ -28,16 +28,15 @@
 
     // in above way, we dont get any propogation functionality so we must use addEventListener()
 
-    document.getElementById('owl').addEventListener('click',function(){
+    document.getElementById('owl').addEventListener('click',function(e){
+        console.log(e);
         alert("owl clicked again...");
     },false) //here default 3rd parameter is false.
-
-    
-    
 
      // attachEvent()
     // jQuery - on
 
+    
     // type, timestamp, defaultPrevented
     // target, toElement, srcElement, currentTarget,
     // clientX, clientY, screenX, screenY
