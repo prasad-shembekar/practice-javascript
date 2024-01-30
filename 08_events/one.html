@@ -63,6 +63,7 @@
 
     document.getElementById('owl').addEventListener('click',function(e){
         console.log("owl clicked");
+        e.stopPropagation(); //event bubbling will be stopped 
     },true) //bahar se andar ki taraf 
 
 
