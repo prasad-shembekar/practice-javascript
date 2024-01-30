@@ -46,9 +46,12 @@
     // Event Bubbling (deafault / false), Event Capturing (true)
 
     document.getElementById('images').addEventListener('click',function(e){
-        console.log(e);
+        console.log("Clicked inside ul");
     })
 
+    document.getElementById('owl').addEventListener('click',function(e){
+        console.log("owl clicked");
+    })
 
 
     // document.getElementById('images').addEventListener('click', function(e){
