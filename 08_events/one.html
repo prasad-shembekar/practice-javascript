@@ -42,6 +42,15 @@
     // clientX, clientY, screenX, screenY
     // altkey, ctrlkey, shiftkey, keyCode
 
+    // Event propogation 
+    // Event Bubbling (deafault / false), Event Capturing (true)
+
+    document.getElementById('images').addEventListener('click',function(e){
+        console.log(e);
+    })
+
+
+
     // document.getElementById('images').addEventListener('click', function(e){
     //     console.log("clicked inside the ul");
     // }, false)
