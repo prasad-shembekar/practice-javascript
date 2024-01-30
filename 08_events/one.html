@@ -24,13 +24,16 @@
 
     // All the events in javascript runs sequentially but using async we can manipulate this behavior
 
-    document.getElementById('owl').onclick = function(){alert("Owl");}
+    // document.getElementById('owl').onclick = function(){alert("Owl");}
 
+    // in above way, we dont get any propogation functionality so we must use addEventListener()
 
+    document.getElementById('owl').addEventListener('click',function(){
+        alert("owl clicked again...");
+    },false) //here default 3rd parameter is false.
 
-    // document.getElementById('owl').onclick = function(){
-    //     alert("owl clicked")
-    // }
+    
+    
 
      // attachEvent()
     // jQuery - on
