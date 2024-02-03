@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Happy Coding</h1>
+    <button id="stop">Stop</button>
+</body>
+<script>
+    setTimeout(function(){
+        console.log("Prasad")
+    },2000)
+
+    const sayFull = function(){ //it is also called as timeHandler
+        console.log('Prasad Shembekar')
+    }
+    setInterval(sayFull,2000)
+
+    const changeText = function(){
+        document.querySelector('h1').innerHTML = "best js series"
+    }
+
+     const changeme =   setTimeout(changeText,3000)
+
+    document.querySelector("#stop").addEventListener('click',function(){
+        clearTimeout(changeme);
+        console.log("it is stopped")
+    })
+</script>
+</html>
