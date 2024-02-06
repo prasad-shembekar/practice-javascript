@@ -7,9 +7,25 @@
 </head>
 <body>
     <h1>Happy Coding</h1>
-    <button id="stop">Stop</button>
+    <button id="start" onclick="start()">Start</button>
+    <button id="stop" onclick="stop()">Stop</button>
 </body>
 <script>
+
+let sayDate = function(str){
+        console.log(str,Date.now());
+        } 
+    function start(){
+        let intervalId = setInterval(sayDate,1000,"hii")
+       
+    }
+
+    function stop(){
+        let intervalId = setInterval(sayDate,1000,"hii")
+        clearInterval(intervalId);
+    }
+
+
     setTimeout(function(){
         console.log("Prasad")
     },2000)
@@ -29,5 +45,9 @@
         clearTimeout(changeme);
         console.log("it is stopped")
     })
+
+    
+
+    
 </script>
 </html>
