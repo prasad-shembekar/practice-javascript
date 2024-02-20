@@ -18,5 +18,15 @@
     const requestUrl = "https://api.github.com/users/prasad-shembekar"
     const xhr = new XMLHttpRequest();
     xhr.open('GET',requestUrl); //method,string
+    //console.log("HERE");
+    xhr.onreadystatechange = function(){
+        console.log(xhr.readyState);
+        if(xhr.readyState === 4){ //to ise string se object me convert krna hoga 
+            const data  = JSON.parse(this.responseText); //most of the times data string ata hai response me 
+            console.log(data.followers);
+        }
+    }
+    xhr.send();
+
 </script>
 </html>
