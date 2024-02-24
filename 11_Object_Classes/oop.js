@@ -26,7 +26,10 @@ function User(username,loginCount,isLoggedIn){
 }
 
 const u1 = User("hitesh",12,true);
-console.log(u1)
+const u2 = User("Prasad",22,true);
+console.log(u1);
+
+
 
 
 
