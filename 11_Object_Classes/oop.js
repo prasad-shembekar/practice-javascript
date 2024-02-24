@@ -22,13 +22,21 @@ function User(username,loginCount,isLoggedIn){
     this.loginCount = loginCount;
     this.isLoggedIn = isLoggedIn;
 
+    this.greeting = function(){
+        console.log(`Welcome ${this.username}`);
+    }
+
     return this;
 }
 
 const u1 = new User("hitesh",12,true);
 const u2 =   User("Prasad",22,true);
-console.log(u1);
+console.log(u1.constructor);
+console.log("Hii")
 console.log(u2);
+
+// new keyword creates new object. calls constructor function 
+
 
 
 
