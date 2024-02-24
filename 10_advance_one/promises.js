@@ -109,3 +109,4 @@ fetch('https://jsonplaceholder.typicode.com/users')
 .then((data)=>{console.log(data)}) //chainable / thenable
 .catch((err)=>{console.log(error)})
 
+// sabse pahle data print hua jiska code last me likha hai 
