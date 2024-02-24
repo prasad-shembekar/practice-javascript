@@ -82,5 +82,5 @@ const promiseFive = new Promise(function(resolve,reject){
 })
 
 async function promise(){
-    
+    cons
 }
