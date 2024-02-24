@@ -110,3 +110,11 @@ fetch('https://jsonplaceholder.typicode.com/users')
 .catch((err)=>{console.log(error)})
 
 // sabse pahle data print hua jiska code last me likha hai 
+
+// XHR request XMLHttpRequest 
+
+// fetch API introduced in 2015 but not integrated with node.js
+// because of AbortController in node.js as node do not have engine 
+
+
+
