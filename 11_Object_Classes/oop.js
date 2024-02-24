@@ -8,4 +8,6 @@ const user = {
 }
 
 console.log(user.username);
+console.log(user.getUserDetails());
+
 
