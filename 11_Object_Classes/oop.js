@@ -5,6 +5,7 @@ const user = {
     getUserDetails: function(){
         // console.log("Got user details from database...");
         console.log(`Username: ${this.username}`);
+        console.log(this)
     }
 }
 // this keyword deals with current context
