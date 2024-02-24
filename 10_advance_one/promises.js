@@ -104,3 +104,8 @@ async function getAllUsers(){
 
 getAllUsers();
 
+fetch('https://jsonplaceholder.typicode.com/users')
+.then((res)=>{return response.json()})
+.then((data)=>{console.log(data)}) //chainable / thenable
+.catch((err)=>{console.log(error)})
+
