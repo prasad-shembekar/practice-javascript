@@ -9,7 +9,22 @@ const user = {
     }
 }
 // this keyword deals with current context
-console.log(user.username);
-console.log(user.getUserDetails());
+//console.log(user.username);
+//console.log(user.getUserDetails());
 
-// node ke context me 
+const promiseOne = new Promise(function(resolve,reject){
+
+})
+const date = new Date(); //constructor function
+
+function User(username,loginCount,isLoggedIn){
+    this.username = username;   
+    this.loginCount = loginCount;
+    this.isLoggedIn = isLoggedIn;
+
+    return this;
+}
+
+
+
+
