@@ -82,9 +82,14 @@ const promiseFive = new Promise(function(resolve,reject){
 })
 
 async function consumePromise(){
-        const response = await promiseFive;
+        try{
+            const response = await promiseFive;
         console.log(response);
+        }catch(error){
+            console.log(error);
+        }
 }
 
 consumePromise();
+
 
