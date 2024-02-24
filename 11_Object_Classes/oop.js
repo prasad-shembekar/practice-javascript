@@ -37,6 +37,16 @@ console.log(u2);
 
 // new keyword creates new object. calls constructor function 
 
+// arrow function me this ka access nahi hota quki prototype usme aa jata hai
+
+function multipleBy5(num){
+    return num*5;
+}
+
+multipleBy5.power = 2;
+
+console.log(multipleBy5.power);
+console.log(multipleBy5.prototype);
 
 
 
