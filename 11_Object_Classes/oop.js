@@ -25,9 +25,10 @@ function User(username,loginCount,isLoggedIn){
     return this;
 }
 
-const u1 = User("hitesh",12,true);
-const u2 = User("Prasad",22,true);
+const u1 = new User("hitesh",12,true);
+const u2 =   User("Prasad",22,true);
 console.log(u1);
+console.log(u2);
 
 
 
