@@ -38,3 +38,14 @@ const promiseThree = new Promise(function(resolve,reject){
 promiseThree.then(function(user){
     console.log(user);
 },1000)
+
+const promiseFour = new Promise(function(resolve,reject){
+    setTimeout(function(){
+        let error = true;
+        if(!error){
+            resolve({username: "prasad",password:"123"});
+        }else{
+            reject("ERROR: Something went wrong")
+        }
+    },1000)
+})
