@@ -86,3 +86,5 @@ async function consumePromise(){
         console.log(response);
 }
 
+consumePromise();
+
