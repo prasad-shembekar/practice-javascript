@@ -19,3 +19,4 @@ Object.prototype.prasad = function(){
     console.log("prasad is present in all objects ")
 }
 heroPower.prasad();
+myHeros.prasad();
