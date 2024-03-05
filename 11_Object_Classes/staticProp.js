@@ -17,9 +17,9 @@ console.log(prasad.createId())
 
 class Teacher extends User{
     constructor(username,email){
-        super(username)
+        super(username);
         this.email = email;
     }
 }
 
-const iPhone = new Teacher('iPhone', "i@phone.cpm");
+const iPhone = new Teacher('iPhone', "i@phone.com");
