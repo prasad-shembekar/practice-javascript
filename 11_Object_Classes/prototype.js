@@ -27,3 +27,15 @@ Array.prototype.heyPrasad = function(){
 myHeros.heyPrasad();
 // heroPower.heyPrasad(); do not have access 
 
+
+const Teacher = {
+    makeVideo: true
+}
+
+const TeachingSupport = {
+    isAvailable: false
+}
+
+const TASupport = {
+    makeAssignment: 'JS assignment'
+}
