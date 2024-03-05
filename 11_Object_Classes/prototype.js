@@ -37,5 +37,27 @@ const TeachingSupport = {
 }
 
 const TASupport = {
-    makeAssignment: 'JS assignment'
+    makeAssignment: 'JS assignment',
+    fullTime: true,
+    __proto__: TeachingSupport
+}
+
+const User = {
+    name: "User 1",
+    email: "username@email.com"
+}
+
+
+Teacher.__proto__ = User
+
+// Modern syntax
+
+Object.setPrototypeOf(TeachingSupport,Teacher)
+
+
+let anotherUsername = "Chai with code"
+String.prototype.trueLength = function(){
+    console.log(`${this}`)
+    console.log(`${this.name}`)
+    console.log(`True length is: ${this.trim().length}`)
 }
