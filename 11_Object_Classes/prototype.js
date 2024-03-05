@@ -20,3 +20,7 @@ Object.prototype.prasad = function(){
 }
 heroPower.prasad();
 myHeros.prasad();
+
+Array.prototype.heyPrasad = function(){
+    console.log(``)
+}
