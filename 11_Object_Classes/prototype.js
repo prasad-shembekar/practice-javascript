@@ -24,6 +24,6 @@ myHeros.prasad();
 Array.prototype.heyPrasad = function(){
     console.log(`Prasad says hello`)
 }
-
 myHeros.heyPrasad();
-heroPower.heyPrasad();
+// heroPower.heyPrasad(); do not have access 
+
