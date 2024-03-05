@@ -21,5 +21,4 @@ function User(email, password){
 }
 
 const chai = new User("chai@chai.com", "chai")
-
 console.log(chai.email);
