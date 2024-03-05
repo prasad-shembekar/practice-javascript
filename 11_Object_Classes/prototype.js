@@ -22,5 +22,8 @@ heroPower.prasad();
 myHeros.prasad();
 
 Array.prototype.heyPrasad = function(){
-    console.log(``)
+    console.log(`Prasad says hello`)
 }
+
+myHeros.heyPrasad();
+heroPower.heyPrasad()
