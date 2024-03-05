@@ -26,4 +26,4 @@ Array.prototype.heyPrasad = function(){
 }
 
 myHeros.heyPrasad();
-heroPower.heyPrasad()
+heroPower.heyPrasad();
