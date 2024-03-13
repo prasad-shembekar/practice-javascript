@@ -24,10 +24,25 @@
 
         // jab inner function ka reference return kiya jata hai tab uska lexical scope yaane pura outer function ka variable ke saath return hota hai jise closure kahte hai 
 
-        document.getElementById("orange").onclick = function(){
-            document.body.style.backgroundColor = `orange`;
-            
+        // document.getElementById("orange").onclick = function(){
+        //     document.body.style.backgroundColor = `orange`;
+        // }
+
+        // document.getElementById("yellow").onclick = function(){
+        //     document.body.style.backgroundColor = `yellow`;
+        // }
+
+        function clickHandler(color){
+            // document.body.style.backgroundColor = `${color}`;
+
+            return function(){
+                document.body.style.backgroundColor = `${color}`;
+            }
         }
+
+        document.getElementById('orange').onclick = clickHandler("orange");
+        document.getElementById('yellow').onclick = clickHandler("yellow");
+
     </script>
 </body>
 </html>
